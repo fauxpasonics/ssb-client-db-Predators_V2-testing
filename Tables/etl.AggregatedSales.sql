@@ -1,0 +1,30 @@
+CREATE TABLE [etl].[AggregatedSales]
+(
+[SSB_CRMSYSTEM_CONTACT_ID] [nvarchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[FirstName] [nvarchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[LastName] [nvarchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Email] [nvarchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Phone] [nvarchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ArchticsIDs] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[FullSeasonTicketQty] [int] NULL,
+[FullSeasonTotalQty] [int] NULL,
+[FullSeasonPlanCodes] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[FullSeasonRevenue] [decimal] (18, 6) NULL,
+[HalfSeasonTicketQty] [int] NULL,
+[HalfSeasonTotalQty] [int] NULL,
+[HalfSeasonPlanCodes] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[HalfSeasonRevenue] [decimal] (18, 6) NULL,
+[PartialSeasonTicketQty] [int] NULL,
+[PartialSeasonTotalQty] [int] NULL,
+[PartialSeasonPlanCodes] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[PartialSeasonRevenue] [decimal] (18, 6) NULL,
+[OtherTicketQty] [int] NULL,
+[OtherTotalQty] [int] NULL,
+[OtherSeasonPlanCodes] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[OtherSeasonRevenue] [decimal] (18, 6) NULL,
+[OverallTotalTickets] [int] NULL,
+[OverallTotalRevenue] [decimal] (18, 6) NULL,
+[ETL_UpdatedDate] [datetime] NULL,
+[Season] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+)
+GO

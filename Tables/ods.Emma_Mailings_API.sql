@@ -1,0 +1,41 @@
+CREATE TABLE [ods].[Emma_Mailings_API]
+(
+[MailingID] [nvarchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[MailingType] [nvarchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SendStarted] [nvarchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CancelByUserID] [nvarchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[RecipientCount] [int] NULL,
+[CancelTS] [nvarchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[MailingStatus] [nvarchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[AccountID] [nvarchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Month] [nvarchar] (5) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[FailureTS] [nvarchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ReplyTo] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Year] [nvarchar] (5) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DeletedAt] [nvarchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[StartedOrFinished] [nvarchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Subject] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Disabled] [nvarchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CreatedTS] [nvarchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Sender] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[PlainTextOnly] [nvarchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Name] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Hour] [nvarchar] (5) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ParentMailingID] [nvarchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[FailureMessage] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Day] [nvarchar] (5) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SendFinished] [nvarchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DataCenter] [nvarchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SendAt] [nvarchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SignupFormID] [nvarchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[PurgedAt] [nvarchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ArchivedTS] [nvarchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ETL_CreatedOn] [datetime] NOT NULL,
+[ETL_CreatedBy] [nvarchar] (200) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[ETL_UpdatedOn] [datetime] NOT NULL,
+[ETL_UpdatedBy] [nvarchar] (200) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[ETL_Sync_DeltaHashKey] [binary] (32) NULL
+)
+GO
+ALTER TABLE [ods].[Emma_Mailings_API] ADD CONSTRAINT [PK__Emma_Mai__224CB6DA512F3CDC] PRIMARY KEY CLUSTERED  ([MailingID])
+GO
